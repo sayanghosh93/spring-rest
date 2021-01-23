@@ -1,19 +1,24 @@
 package com.sayan.demo.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Employee")
+@Table(name = "employee")
 public class EmployeeEntity {
 	@Id
 	@GeneratedValue
 	private int id;
+	@Column
 	private String name;
+	@Column
 	private String address;
+	@Column
 	private String department;
+	@Column
 	private int salary;
 	public int getId() {
 		return id;
